@@ -12,6 +12,8 @@ print(f"Here's your file {filename}:")
 # prints the content of the file
 print(txt.read())
 
+txt.close()
+
 # prompt
 print("Type the filename again:")
 # prompts for the filename
@@ -22,3 +24,5 @@ txt_again = open(file_again)
 
 # prints the content of the file
 print(txt_again.read())
+
+txt_again.close()

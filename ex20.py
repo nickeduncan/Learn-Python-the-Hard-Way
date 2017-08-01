@@ -23,11 +23,14 @@ rewind(current_file)
 
 print("Let's print three lines:")
 
+# 1
 current_line = 1
 print_a_line(current_line, current_file)
 
+# 2
 current_line += 1
 print_a_line(current_line, current_file)
 
+# 3
 current_line += 1
 print_a_line(current_line, current_file)

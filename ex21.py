@@ -14,7 +14,7 @@ def divide(a, b):
     print(f"DIVIDING {a} / {b}")
     return a /b
 
-print("Let's do som emath with just functions!")
+print("Let's do some math with just functions!")
 
 age = add(30, 5)
 height = subtract(78, 4)
@@ -31,4 +31,4 @@ what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 print("That becomes: ", what, "Can you do it by hand?")
 
 what2 = age + height - iq/2 * weight
-print(what) 
+print(what)

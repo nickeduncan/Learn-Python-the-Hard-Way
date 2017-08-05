@@ -1,12 +1,11 @@
-def numloop(max, add):
-    i = 0
+def numloop(max):
     numbers = []
 
-    while i < max:
+    numrange = range(max)
+    for i in numrange:
         print(f"At the top i is {i}")
         numbers.append(i)
 
-        i = i + add
         print("Numbers now: ", numbers)
         print(f"At the bottom i is {i}")
 
@@ -15,4 +14,4 @@ def numloop(max, add):
     for num in numbers:
         print(num)
 
-numloop(8, 2)
+numloop(8)

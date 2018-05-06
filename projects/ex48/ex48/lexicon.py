@@ -11,14 +11,14 @@ def check(word):
             return (key, word)
         elif word.isdigit():
             return ('number', int(word))
-        elif not word.isdigit():
-            return ('error', word)
 
 def scan(sentence):
     words = sentence.split()
     result = []
     for word in words:
-        result.append(check(word))
+        if not check(word):
+            result.append(('error', word))
+        else:
+            result.append(check(word))
 
     return result
-
